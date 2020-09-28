@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/brainlife.app.321)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/brainlife.app.435)
 
 # Network Report
 App to create a HTML report for a network, including table of properties, distributions and respective null model distributions when available.
@@ -24,7 +24,7 @@ App to create a HTML report for a network, including table of properties, distri
 
 ### On Brainlife.io
 
-You can submit this App online at [https://doi.org/10.25663/brainlife.app.321](https://doi.org/10.25663/brainlife.app.321) via the "Execute" tab.
+You can submit this App online at [https://doi.org/10.25663/brainlife.app.435](https://doi.org/10.25663/brainlife.app.435) via the "Execute" tab.
 
 ### Running Locally (on your machine)
 Singularity is required to run the package locally.
