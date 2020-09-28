@@ -1,0 +1,4 @@
+{
+    "network": "data/network.json.gz",
+    "nullmodels": "data_nullmodel/network.json.gz"
+}
