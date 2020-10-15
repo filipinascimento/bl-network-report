@@ -5,20 +5,20 @@
 App to create a HTML report for a network, including table of properties, distributions and respective null model distributions when available.
 
 ### Authors
-- [Filipi N. Silva](filsilva@iu.edu)
+- [Filipi N. Silva](https://filipinascimento.github.io)
 
-<!-- ### Contributors
-- Franco Pestilli (franpest@indiana.edu) -->
+### Contributors
+- [Franco Pestilli](https://liberalarts.utexas.edu/psychology/faculty/fp4834)
 
 
 ### Funding
-![NIH-1R01EB029272-01](https://img.shields.io/badge/NIH-1R01EB029272_01-blue.svg)
+[![NIH-1R01EB029272-01](https://img.shields.io/badge/NIH-1R01EB029272_01-blue.svg)](https://projectreporter.nih.gov/project_info_description.cfm?aid=9916138&icde=52173380&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC&pball=)
 
-<!-- ### Citations
+### Citations
 
 1. Bassett, Danielle S., and Olaf Sporns. "Network neuroscience." Nature neuroscience 20, no. 3 (2017): 353. [https://doi.org/10.1038/nn.4502](https://doi.org/10.1038/nn.4502)
 
-2. Costa, L. da F., Francisco A. Rodrigues, Gonzalo Travieso, and Paulino Ribeiro Villas Boas. "Characterization of complex networks: A survey of measurements." Advances in physics 56, no. 1 (2007): 167-242.[https://doi.org/10.1080/00018730601170527](https://doi.org/10.1080/00018730601170527) -->
+2. Costa, L. da F., Francisco A. Rodrigues, Gonzalo Travieso, and Paulino Ribeiro Villas Boas. "Characterization of complex networks: A survey of measurements." Advances in physics 56, no. 1 (2007): 167-242.[https://doi.org/10.1080/00018730601170527](https://doi.org/10.1080/00018730601170527)
 
 ## Running the App 
 
@@ -57,10 +57,6 @@ A sample dataset is provided in folder `data` and `config-sample.json`
 ## Output
 
 The output is a HTML report with figures in PDF and PNG.
-
-<!-- #### Product.json
-
-The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing.  -->
 
 ### Dependencies
 
