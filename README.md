@@ -8,7 +8,7 @@ App to create a HTML report for a network, including table of properties, distri
 - [Filipi N. Silva](https://filipinascimento.github.io)
 
 ### Contributors
-- Franco Pestilli (https://liberalarts.utexas.edu/psychology/faculty/fp4834)
+- [Franco Pestilli](https://liberalarts.utexas.edu/psychology/faculty/fp4834)
 
 
 ### Funding
