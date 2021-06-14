@@ -15,6 +15,9 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 import numbers
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
 
 def isFloat(value):
 	if(value is None):
@@ -23,6 +26,8 @@ def isFloat(value):
 		numericValue = float(value)
 		return np.isfinite(numericValue)
 	except ValueError:
+		return False
+	except TypeError:
 		return False
 
 
@@ -111,11 +116,20 @@ with open(configFilename, "r") as fd:
 
 networks = jgf.igraph.load(config["network"], compressed=True)
 
+
 nullNetworks = None
 if("nullmodels" in config and config["nullmodels"]):
 	nullNetworks = jgf.igraph.load(config["nullmodels"], compressed=True)
 
-binsCount = 25
+useOnlyMajorConnectedComponent = True
+if("major" in config):
+	useOnlyMajorConnectedComponent = config["major"]
+
+if(useOnlyMajorConnectedComponent):
+	networks = [network.clusters().giant() for network in networks]
+	nullNetworks = [nullNetwork.clusters().giant() for nullNetwork in nullNetworks]
+
+binsCount = 40
 
 if(len(networks)>1):
 	warning("Input files have more than one network. Only the first entry was used to compose the report.")
@@ -148,7 +162,7 @@ else:
 				networkAttributes[keyIndex].append("%.3g ± %.3g"%(nullAverage,nullStd))
 				if(isFloat(value) and nullStd>0):
 					_,bins = np.histogram([value]+nullValues)
-					fig = plt.figure(figsize= (6,3.0))
+					fig = plt.figure(figsize= (5,2.0))
 					ax = plt.axes()
 					ax.hist(nullValues,bins=bins,density=True,color="#888888")
 					# ax.hist([value],bins=bins,density=True,color="#cc1111")
