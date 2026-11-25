@@ -2,6 +2,41 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.1-blue.svg)](https://doi.org/10.25663/brainlife.app.435)
 
 # Network Report
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Generates an HTML report for a network (JGF), with a table of network properties and histograms of network and node attributes, optionally compared with null-model distributions, using igraph.**
+
+Loads the first network of a JSON Graph Format file with igraph (by default keeping only the giant connected component), tabulates its network-level properties and plots distributions of network and node attributes as PNG and PDF figures embedded in an HTML page. If a null-model network is given, its average distributions are drawn for comparison. Use it to inspect connectivity networks produced by other brainlife network Apps.
+
+| | |
+|---|---|
+| 📥 **Inputs** | `generic/network` · `generic/network` (optional) |
+| 📤 **Outputs** | `report/html` |
+| 🐳 **Container** | `filsilva/cxnetwork:0.2.0` |
+| ⚙️ **Resources** | 1 CPUs |
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.435](https://doi.org/10.25663/brainlife.app.435) |
+
+#### 📥 Inputs
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `network` | `generic/network` | yes | Input network used to generate a report. |
+| `nullmodels` | `generic/network` (null-model) | no | Null model to be used as comparison for the distributions. |
+
+#### 📤 Outputs
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `report/html` | Report of the network, with plots and tables describing network properties. |
+
+📚 **References used by this App:**
+- Avesani P. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+- Bassett D. S., Sporns O. Network neuroscience. Nature Neuroscience 20(3):353 (2017). [doi:10.1038/nn.4502](https://doi.org/10.1038/nn.4502)
+- Costa L. da F., Rodrigues F. A., Travieso G., Villas Boas P. R. Characterization of complex networks: A survey of measurements. Advances in Physics 56(1):167-242 (2007).
+
+<!-- brainlife-app:end -->
+
 App to create a HTML report for a network, including table of properties, distributions and respective null model distributions when available.
 
 ### Authors
